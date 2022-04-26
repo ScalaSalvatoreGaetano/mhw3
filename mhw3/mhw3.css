@@ -1,0 +1,324 @@
+/*
+SCALA SALVATORE GAETANO O46001744
+*/
+
+/*sezione aggiuntiva mhw3*/
+form{
+    background-color:white;
+    height:60px;
+    width:500px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+
+select[name='tipo'], form input{ border:none; }
+form input{ line-height:25px; }
+
+form, #album-view { 
+    border-radius:15px; 
+    margin-top:20px;
+
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.submit{
+    background-color:white;
+}
+
+.submit:hover{
+    cursor:pointer;
+    background-color: #cfe3ff;
+}
+
+#album-view {
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+
+    margin-left:auto;
+    margin-right:auto;
+    
+    background-color:white;
+    width:80vw;
+}
+
+#album-view .container {
+    margin: 10px;
+    border: 1px solid slategray;
+    padding: 10px;
+    max-width: 235px;  
+    max-height: 235px; 
+    display: flex;
+    flex-direction:column;
+    margin:25px;
+}
+
+#album-view .container:hover {
+    cursor: pointer;
+	background-color: #cfe3ff;
+}
+
+#album-view img {
+	width: 100%;
+    height:100%;
+}
+
+/*************************/
+
+
+
+
+
+
+
+
+body{
+    margin:0;
+    background-color:rgb(255, 255, 0);
+    font-size:1.5em;
+}
+
+nav{ color:white; }
+
+header{
+    background-image: url("nav_wal.png");
+    background-size: cover;
+    height: 700px;
+    text-align:center;
+    
+    width:100wh;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.3);
+    height:100%;
+
+    position:relative;
+    z-index:1;
+}
+
+
+.overlay h1{
+    color:white;
+    
+    font-family: 'Roboto Slab', serif;
+    top:130px;
+    
+    font-size:70px;
+    
+    left:1%;
+    right:1%;
+}
+
+.overlay nav{
+    display:flex;
+    justify-content: space-around;
+    
+}
+
+.overlay nav a{
+    padding:10px;
+   
+    border-radius:10px;
+    margin-top:10px;
+    cursor:pointer;
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.overlay nav a:hover{
+    background-color:white;
+    color:black;
+}
+
+
+.overlay h1, #logo{ position:absolute; }
+
+/*---------------*/
+
+#logo{
+    left:30%;
+    right:30%;
+    z-index:2;
+
+    width:auto;
+    color:rgb(51, 51, 51);
+
+    line-height:24px;
+
+    font-size:25px;
+    margin-top:-50px;
+    text-align:center;
+    font-family: 'Roboto Slab', serif;
+}
+
+#logo img{
+    width:100px;
+    height:100px;
+    border-radius:100%;
+    background-color:white;
+
+}
+
+.aggiornamento{ font-family:italic; }
+
+.linea{
+    width:300px;
+    margin-top:10px;
+    border:2px solid ;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/*---------------*/
+
+#editor h2{
+    font-family: 'Roboto Slab', serif;
+    font-size:36px;
+    color:rgb(51, 51, 51);
+}
+
+article{
+    margin-top:260px;
+    width:80vw;
+    /*
+    width:66vw;
+    margin-left:250px;
+    */
+
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+
+
+.numero{ margin-right:40px; }
+
+#editor img{
+    width:100%;
+    margin-bottom:120px;
+    height:500px;
+}
+
+
+#link-editor, #editor img, #editor p{ margin-left: 75px; }
+
+#link-editor{
+    color:rgb(252, 248, 248);
+
+    cursor:pointer; 
+    background-color:rgb(23, 187, 187);
+    padding:20px;
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:1.4em;
+    border-radius:10px;
+
+    /*eliminazione sottolineatura link*/
+    text-decoration:none;
+}
+
+#link-editor:hover{
+    background-color:white;
+    color:black;
+}
+
+
+/*********/
+
+footer
+{
+    background-color:black;
+    color:white;
+    height:50px;
+    text-align:center;
+    font-size:1.3em;
+
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/************************************/
+
+@media(max-width: 500px)
+{
+    nav a{ display:none; }
+
+    header{
+        height:600px;
+        margin-top:-50px;
+    }
+
+    .overlay h1{
+        margin-top:300px;
+        font-size:35px;
+    }
+    
+
+    #link-mobile{
+
+        width:70px;
+        height:40px;
+      
+      
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items:center;
+        
+        position:absolute;
+        top:70px;
+        right:15px;
+      
+    }
+
+    #link-mobile:hover{ cursor:pointer; }
+    
+    
+    #link-mobile a{
+        margin:3px;
+        height:20px;
+        width:40px;
+        background-color:white;
+      
+        border-radius:20px;
+    }
+
+    /* LOGO */
+
+    #logo{ font-size:20px; }
+
+   
+    #logo .linea{ width:100%; }
+
+    /*article*/
+    article
+    {
+        margin-left:50px;
+        font-size:25px;
+    }
+
+    #editor img{
+        width:350px;
+        height:250px;
+    }
+
+    #link-editor{
+        padding:11px;
+        font-size:20px;
+    }
+
+    footer{
+        font-size:25px;
+    }
+}
